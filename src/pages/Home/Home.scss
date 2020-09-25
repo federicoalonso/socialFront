@@ -1,0 +1,40 @@
+@import "../../scss/index.scss";
+
+.home{
+    &__title{
+        border-bottom: 1px solid $border-grey;
+        padding: 15px;
+
+        h2{
+            font-weight: bold;
+            margin-bottom: 0;
+            font-size: 22px;
+        }
+    }
+
+    
+    &__loading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+
+        >div{
+            margin-bottom: 10px;
+        }
+    }
+
+    .busqueda.btn.btn-primary{
+        display: flex;
+        margin: 10px auto;
+        background-color: transparent;
+        border: 0;
+
+        &:hover,
+        &:focus{
+            background-color: transparent !important;
+            color: $primary;
+        }
+    }
+}
